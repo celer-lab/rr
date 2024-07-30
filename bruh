@@ -1,0 +1,87 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("CelestialHub", "Midnight")
+local Tab = Window:NewTab("MM2")
+local Section = Tab:NewSection("MM2")
+Section:NewButton("MM2", "MM2", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Roman34296589/SnapSanix-GUI-MM2/main/SnapSanix%20GUI%20mm2.lua'))()
+end)
+local Tab = Window:NewTab("Evade")
+local Section = Tab:NewSection("Evade")
+Section:NewButton("TbaoHub", "TbaoHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
+end)
+local Tab = Window:NewTab("Doors")
+local Section = Tab:NewSection("Doors")
+Section:NewButton("DOORS-FFJ-Hub-11365", "DOORS-FFJ-Hub-11365", function()
+    loadstring(game:HttpGet('https://rawscripts.net/raw/DOORS-FFJ-Hub-11365'))()
+end)
+local Tab = Window:NewTab("3008")
+local Section = Tab:NewSection("3008")
+Section:NewButton("3008", "3008", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/chiepz/aslbnmnkhby7e/main/crqhryvjahdjwysrnegsf%5Csgd"))()
+end)
+local Tab = Window:NewTab("build a boat for treasure")
+local Section = Tab:NewSection("build a boat for treasure")
+Section:NewButton("build a boat", "build a boat", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
+end)
+local Tab = Window:NewTab("Untitled attack on titan")
+local Section = Tab:NewSection("Untitled attack on titan")
+Section:NewButton("Untitled attack on titan", "Untitled attack on titan", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zhanzheng666/Roblox/main/Untitled%20Attack%20On%20Titan.lua"))()
+end)
+local Tab = Window:NewTab("shindo life 2")
+local Section = Tab:NewSection("shindo life 2")
+Section:NewButton("premier hub", "premier hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
+end)
+local Tab = Window:NewTab("Arsenal")
+local Section = Tab:NewSection("Arsenal")
+Section:NewButton("Arsenal", "Arsenal", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/G6Ubkkuv"))()
+end)
+local Tab = Window:NewTab("script hun")
+local Section = Tab:NewSection("script hub")
+Section:NewButton("script hub", "script hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Qrto1/working/main/pc"))()
+end)
+local Section = Tab:NewSection("script hub")
+Section:NewButton("script hub", "script hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/drissez1/BLOODBANDER-FE/main/FE"))()
+end)
+local Tab = Window:NewTab("lumber tycoon 2")
+local Section = Tab:NewSection("lumber tycoon 2")
+Section:NewButton("Button", "Button", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Bido%20Skins%20V1.7"))()
+end)
+local Tab = Window:NewTab("FE Scripts")
+local Section = Tab:NewSection("FE Scripts")
+Section:NewButton("Fly", "Fly", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+Section:NewButton("Noclip", "Noclip", function()
+    local Noclip = nil
+local Clip = nil
+
+function noclip()
+    Clip = false
+    local function Nocl()
+        if Clip == false and game.Players.LocalPlayer.Character ~= nil then
+            for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                if v:IsA('BasePart') and v.CanCollide and v.Name ~= floatName then
+                    v.CanCollide = false
+                end
+            end
+        end
+        wait(0.21) -- basic optimization
+    end
+    Noclip = game:GetService('RunService').Stepped:Connect(Nocl)
+end
+
+function clip()
+    if Noclip then Noclip:Disconnect() end
+    Clip = true
+end
+
+noclip() -- to toggle noclip() and clip()
+end)
